@@ -1,6 +1,6 @@
 # EXPERIMENT-04-INTERRUPT-GENERATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR
 
-###  DATE: 15/05/2026
+###  DATE: 23/02/2026
 
 ###  NAME: VIJAYASHREE B
 ###  ROLL NO : 212223040238
@@ -709,12 +709,11 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 ```
 ## Output screen shots of serial port utility   :
-4(A)
+ <img width="1918" height="1026" alt="image" src="https://github.com/user-attachments/assets/d40e8663-3285-4437-a06b-d259ae250e52" />
 
  <img width="1904" height="1008" alt="image" src="https://github.com/user-attachments/assets/1d40be19-d249-4259-a9ca-51d190ff490e" />
 
  ## Circuit board :
- 4(B)
  <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/23f4f3a3-6ea6-40ad-b156-3b7dbda2b78c" />
 
  <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/c4628d0c-f9ea-4618-8b68-69aa90dbdb4c" />
