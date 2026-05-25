@@ -1,10 +1,10 @@
 # EXPERIMENT-04-INTERRUPT-GENERATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR
 
-###  DATE: 23/02/2026
+###  DATE: 22/05/2026
 
-###  NAME: VIJAYASHREE B
+###  NAME:VIJAYASHREE B 
 ###  ROLL NO : 212223040238
-###  DEPARTMENT: BE CSE
+###  DEPARTMENT: CSE
 ### Aim:
 To Interface a IR Sensor to digital port of iot development board  and generate an interrupt and visualize on the serial monitor 
 
@@ -125,9 +125,8 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
  
 
 ## STM 32 CUBE PROGRAM :
-4A
+## 4A:
 ```
-
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -149,11 +148,9 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stdio.h"
-
 #if defined(__GNUC__)
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #endif
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -242,7 +239,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_4)==1)
 	{
-		printf("INTERRUPT GENERATED\n");
+		printf("Interrupt Generated\n");
 	}
 }
 PUTCHAR_PROTOTYPE
@@ -250,7 +247,6 @@ PUTCHAR_PROTOTYPE
 	HAL_UART_Transmit(&huart2,(uint8_t*)&ch,1,0xFFFF);
 	return ch;
 }
-
 /**
   * @brief System Clock Configuration
   * @retval None
@@ -408,9 +404,8 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 ```
 
-4B
+## 4B:
 ```
-
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -435,11 +430,9 @@ void assert_failed(uint8_t *file, uint32_t line)
 #include"stdio.h"
 bool IRSENSOR;
 void IRPAIR();
-
 #if defined(__GNUC__)
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #endif
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -522,7 +515,6 @@ int main(void)
 	  IRPAIR();
     /* USER CODE BEGIN 3 */
   }
-
   /* USER CODE END 3 */
 }
 void IRPAIR()
@@ -708,16 +700,32 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif /* USE_FULL_ASSERT */
 ```
-## Output screen shots of serial port utility   :
- <img width="1918" height="1026" alt="image" src="https://github.com/user-attachments/assets/d40e8663-3285-4437-a06b-d259ae250e52" />
 
- <img width="1904" height="1008" alt="image" src="https://github.com/user-attachments/assets/1d40be19-d249-4259-a9ca-51d190ff490e" />
+
+## Output screen shots of serial port utility   :
+ ## 4A:
+
+ <img width="1920" height="1080" alt="Screenshot 2026-05-22 112132" src="https://github.com/user-attachments/assets/ec5dbdbd-168c-409c-8b01-be57db6881b7" /><br><br>
+
+ # 4B:
+
+ <img width="1919" height="1015" alt="Screenshot 2026-05-07 162621" src="https://github.com/user-attachments/assets/66028fa6-0d47-457f-a7c0-0d6d20856c36" /><br><br>
 
  ## Circuit board :
- <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/23f4f3a3-6ea6-40ad-b156-3b7dbda2b78c" />
+ # 4A:
 
- <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/c4628d0c-f9ea-4618-8b68-69aa90dbdb4c" />
+<img width="1111" height="810" alt="Screenshot 2026-05-22 131647" src="https://github.com/user-attachments/assets/40089b68-000e-4259-8f8e-84860a69f3f6" />
 
+
+ # 4B:
+<img width="965" height="786" alt="Screenshot 2026-05-22 131709" src="https://github.com/user-attachments/assets/740ad6dd-290b-4fc9-9f33-b05da729a391" />
+
+
+<img width="1058" height="794" alt="Screenshot 2026-05-22 131719" src="https://github.com/user-attachments/assets/dc3b6231-c6b7-4a7d-b1f5-66052780b0f3" />
+
+ 
+
+ 
  
 ## Result :
 Interfacing a  IR SENSOR and interrupt is generated using external interrupt mode , visualized on serial port 
